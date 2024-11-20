@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page with Aside and Image</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <!-- Main content area -->
+    <main>
+        <!-- Form Section -->
+        <section>
+            <h2>Fill out the form below</h2>
+            <form action="/submit" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- Aside Section with an image -->
+        <aside>
+            <h3>Did You Know?</h3>
+            <p>Did you know that filling out forms online has become the most efficient way to send feedback or contact businesses?</p>
+
+            <!-- Image with alternative text -->
+            <img src="/Users/dimitrilarbi/d277-front-end-web-development/fill-out-form-hi.png" alt="Fill this form image" width="300">
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Website</p>
+    </footer>
+</body>
+</html>
