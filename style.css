@@ -163,9 +163,7 @@ nav ul li a:hover {
   height: auto;
 }
 
-/* Relative Positioning */
 .main-content {
-  position: relative;
   top: 20px;
   padding: 20px;
   background-color: #f9f9f9;
@@ -212,4 +210,14 @@ aside {
   flex: 1;
   padding: 10px;
   background-color: #f0f0f0;
+}
+
+ /* Relative Positioning */
+.city-title {
+  position: relative;
+  left: 5px; 
+  top: 0px;   
+  color: #4CAF50;
+  font-size: 2em;
+  font-weight: bold;
 }
