@@ -25,7 +25,7 @@
     <div class="container">
       <section>
         <h2>Reach Our Team</h2>
-        <form action="#" method="post">
+        <form action="#" method="post" id="contactForm" onsubmit="return validateEmails()">
           <label for="firstName">First Name:</label>
           <input type="text" id="firstName" name="firstName" required>
 
@@ -63,13 +63,16 @@
   <script>
     // JavaScript function to validate email fields
     function validateEmails() {
-      const email = document.getElementById("email").value;
-      const confirmEmail = document.getElementById("confirmEmail").value;
+      const email = document.getElementById("email").value.trim();
+      const confirmEmail = document.getElementById("confirmEmail").value.trim();
+    
       if (email !== confirmEmail) {
         alert("Email addresses do not match. Please check and try again.");
-        return false; // Prevents form submission
+        return false;
+      } else {
+        alert("Email addresses match. Form will be submitted.");
+        return true;
       }
-      return true; // Allows form submission if emails match
     }
   </script>
 </body>
